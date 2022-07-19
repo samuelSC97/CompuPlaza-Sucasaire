@@ -1,5 +1,5 @@
 
-[
+const baseDeDatos = [
     {
         "nombre": "Lenovo IdeaPad 3I",
         "id": 1,
@@ -171,3 +171,4 @@
         "imagen": "https://picsum.photos/id/27/600/600"
     }
 ]
+

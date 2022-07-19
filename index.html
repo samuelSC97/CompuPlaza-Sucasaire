@@ -8,33 +8,29 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Compuplaza</h1>
-    <div class="container">
-        <h2>Carrito</h2>
-        <hr>
-        <div class="row" id="items"></div>
+  <h1>CompuPlaza</h1>
+  <p>Aca encontraremos todo tipo de laptops</p>
+  <div class="container">
+    <div class="row">
+        <!-- Elementos generados a partir del JSON -->
+        <main id="items" class="col-sm-8 row"></main>
+        <!-- Carrito -->
+        <aside class="col-sm-4">
+            <h2>Carrito</h2>
+            <!-- Elementos del carrito -->
+            <ul id="carrito" class="list-group"></ul>
+            <hr>
+            <!-- Precio total -->
+            <p class="text-right">Total: <span id="total"></span>&euro;</p>
+            <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+        </aside>
     </div>
-    
-    <template id="template-card">
-        <div class="col-12 mb-2 col-mb-4">
-            <div class="card">
-                <img src="" alt="" class="card-img-top">
-                <div class="card-body">
-                    <h3>Titulo</h3>
-                    <p>Precio</p>
-                    <button class="btn btn-dark">Comprar</button>
-                </div>
-            </div>
-        </div>
-
-    </template>
+</div>
 
 
 
-
-
-
-
-    <script src="app.js"></script>
+  <!-- JAVA SCRIPT -->
+  <script src="app.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
